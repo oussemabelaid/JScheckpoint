@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="mother-div">
+        <table class="calc-table">
+            <tr>
+                <td colspan="4">
+                    <div class="name">CALCULATOR</div>
+                    <input type="text" id="calc-output" placeholder="0" readonly="readonly">
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="7" onclick="getNummber(7)"></td>
+                <td><input type="button" value="8" onclick="getNummber(8)"></td>
+                <td><input type="button" value="9" onclick="getNummber(9)"></td>
+                <td><input type="button" value="-" onclick="getOperand('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="getNummber(4)"></td>
+                <td><input type="button" value="5" onclick="getNummber(5)"></td>
+                <td><input type="button" value="6" onclick="getNummber(6)"></td>
+                <td><input type="button" value="+" onclick="getOperand('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="getNummber(1)"></td>
+                <td><input type="button" value="2" onclick="getNummber(2)"></td>
+                <td><input type="button" value="3" onclick="getNummber(3)"></td>
+                <td><input type="button" value="*" onclick="getOperand('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="getNummber(0)"></td>
+                <td><input type="button" value="res" onclick="backspace()"></td>
+                <td><input type="button" value="=" onclick="compute('=')"></td>
+                <td><input type="button" value="/" onclick="getOperand('/')"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>
